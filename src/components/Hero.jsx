@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col md:flex-row items-start gap-5`}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -29,7 +29,7 @@ const Hero = () => {
 
         {/* Profile Photo */}
         <motion.div 
-          className="flex flex-col items-center"
+          className="flex flex-col items-center mt-8 md:mt-0"
           animate={{
             y: [0, -10, 0],
           }}
@@ -40,7 +40,7 @@ const Hero = () => {
             ease: "easeInOut"
           }}
         >
-          <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-[#915EFF]">
+          <div className="w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[#915EFF]">
             <img
               src="/photo.jpg"
               alt="Mohamed Aziz Ouerfelli"

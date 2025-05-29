@@ -56,36 +56,32 @@ const Education = () => {
                 speed: 1000,
                 transition: true,
               }}
-              className="w-[45%]"
+              className="w-full sm:w-[45%]"
             >
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.2 }}
-                className="bg-tertiary p-5 rounded-2xl w-full border-2 border-white/20 hover:border-white/40 transition-all duration-300"
+                className="bg-tertiary p-4 sm:p-5 rounded-2xl w-full border-2 border-white/20 hover:border-white/40 transition-all duration-300"
               >
                 <div className="relative w-full">
-                  <div className="absolute inset-0 flex justify-center m-3">
-                    <div className="w-full bg-black-gradient rounded-xl p-4 border border-white/10">
-                      <div className="w-[90%] mx-auto mb-4 rounded-lg overflow-hidden border border-white/20">
+                  <div className="absolute inset-0 flex justify-center m-2 sm:m-3">
+                    <div className="w-full bg-black-gradient rounded-xl p-3 sm:p-4 border border-white/10">
+                      <div className="w-[90%] mx-auto mb-3 sm:mb-4 rounded-lg overflow-hidden border border-white/20">
                         <img
                           src={item.image}
                           alt={item.school}
-                          className="w-full h-[200px] object-cover"
+                          className="w-full h-[150px] sm:h-[200px] object-cover"
                         />
                       </div>
-
-                      <h3 className="text-white text-[20px] font-bold">
-                        {item.title}
-                      </h3>
-                      <p className="text-secondary text-[16px] font-semibold mt-2">
+                      <h3 className="text-white text-[18px] sm:text-[20px] font-bold text-center mb-2">
                         {item.school}
+                      </h3>
+                      <p className="text-secondary text-[14px] sm:text-[16px] text-center mb-2">
+                        {item.title}
                       </p>
-                      <p className="text-white-100 text-[14px] mt-2">
+                      <p className="text-secondary text-[12px] sm:text-[14px] text-center">
                         {item.period}
-                      </p>
-                      <p className="text-white-100 text-[14px] mt-2">
-                        {item.location}
                       </p>
                       <p className="text-white-100 text-[14px] mt-4">
                         {item.description}
