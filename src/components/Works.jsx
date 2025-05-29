@@ -1,6 +1,7 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
+import { FaFolderOpen } from "react-icons/fa";
 
 import { styles } from "../styles";
 import { github } from "../assets";
@@ -73,7 +74,10 @@ const Works = () => {
       <div className={`${styles.paddingX} max-w-7xl mx-auto py-8 sm:py-16`}>
         <motion.div variants={textVariant()}>
           <p className={`${styles.sectionSubText} text-center`}>My work</p>
-          <h2 className={`${styles.sectionHeadText} text-center`}>Projects.</h2>
+          <div className="flex items-center justify-center gap-4">
+            <FaFolderOpen className="text-[40px] text-white" />
+            <h2 className={`${styles.sectionHeadText} text-center`}>Projects.</h2>
+          </div>
         </motion.div>
 
         <div className='w-full flex justify-center'>

@@ -1,6 +1,7 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
+import { FaUser } from "react-icons/fa";
 
 import { styles } from "../styles";
 import { services } from "../constants";
@@ -40,7 +41,10 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <div className="flex items-center gap-4">
+          <FaUser className="text-[40px] text-white" />
+          <h2 className={styles.sectionHeadText}>About Me.</h2>
+        </div>
       </motion.div>
 
       <motion.p
@@ -53,7 +57,7 @@ const About = () => {
          consistently sharpening my algorithmic thinking and coding efficiency. 
          I also competed in several Capture The Flag challenges, earning 1st, 4th, and 6th places in different events. 
          In addition, I took part in a national Data Science competition where I secured 4th place.
-          I’m always eager to learn, collaborate, and take on new challenges in the tech world
+          I'm always eager to learn, collaborate, and take on new challenges in the tech world
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

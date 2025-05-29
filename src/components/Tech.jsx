@@ -5,6 +5,7 @@ import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
+import { FaCode } from "react-icons/fa";
 
 const Tech = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -26,7 +27,10 @@ const Tech = () => {
       <div className={`${styles.paddingX} max-w-7xl mx-auto`}>
         <motion.div variants={textVariant()}>
           <p className={`${styles.sectionSubText} text-center`}>My skills</p>
-          <h2 className={`${styles.sectionHeadText} text-center`}>Technologies.</h2>
+          <div className="flex items-center justify-center gap-4">
+            <FaCode className="text-[40px] text-white" />
+            <h2 className={`${styles.sectionHeadText} text-center`}>Technologies.</h2>
+          </div>
         </motion.div>
 
         {isMobile ? (
