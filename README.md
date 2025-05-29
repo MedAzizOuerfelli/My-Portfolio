@@ -75,9 +75,6 @@ npm run dev
 3. Configure EmailJS in the Contact component
 4. Customize the theme in `tailwind.config.cjs`
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
