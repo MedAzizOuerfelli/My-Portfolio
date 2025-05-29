@@ -27,8 +27,8 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="relative w-full min-h-screen mx-auto">
-      <div className={`${styles.paddingX} max-w-7xl mx-auto`}>
+    <section id="education" className="relative w-full min-h-[250vh] sm:min-h-screen mx-auto">
+      <div className={`${styles.paddingX} max-w-7xl mx-auto pb-32`}>
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -46,7 +46,7 @@ const Education = () => {
           </p>
         </motion.div>
 
-        <div className="mt-20 flex flex-row justify-between gap-10">
+        <div className="mt-20 flex flex-col sm:flex-row justify-between gap-10">
           {education.map((item, index) => (
             <Tilt
               key={index}
@@ -56,7 +56,7 @@ const Education = () => {
                 speed: 1000,
                 transition: true,
               }}
-              className="w-full sm:w-[45%]"
+              className={`w-full sm:w-[45%] ${index === 1 ? 'mt-[600px] sm:mt-0' : ''}`}
             >
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
