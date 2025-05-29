@@ -229,7 +229,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/MedAzizOuerfelli/Real-Time-Object-Detection",
+    source_code_link: "https://github.com/MedAzizOuerfelli/",
   },
 ];
 
