@@ -1,5 +1,7 @@
  # 3D Portfolio Website
 
+link : https://mohamedazizouerfelli.vercel.app/
+
 A modern, responsive 3D portfolio website built with React, Three.js, and Tailwind CSS. This portfolio showcases your work in an interactive and visually appealing way using 3D graphics and animations.
 
 ## 🚀 Features
@@ -73,9 +75,6 @@ npm run dev
 3. Configure EmailJS in the Contact component
 4. Customize the theme in `tailwind.config.cjs`
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
