@@ -8,13 +8,13 @@ import {
   html,
   css,
   reactjs,
-  redux,
+  cpp,
   tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
+  mysql,
+  angular,
   meta,
   starbucks,
   tesla,
@@ -23,6 +23,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  python,
 } from "../assets";
 
 export const navLinks = [
@@ -37,10 +38,6 @@ export const navLinks = [
   {
     id: "education",
     title: "Education",
-  },
-  {
-    id: "experience",
-    title: "Experience",
   },
   {
     id: "works",
@@ -58,19 +55,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Front-End Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Back-End Development",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Database Management",
+    icon: mobile,
+  },
+  {
+    title: "Machine Learning",
     icon: creator,
   },
 ];
@@ -98,8 +95,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "cpp",
+    icon: cpp,
   },
   {
     name: "Tailwind CSS",
@@ -122,67 +119,16 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "mysql",
+    icon: mysql,
   },
   {
-    name: "docker",
-    icon: docker,
-  },
-];
-
-const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    name: "angular",
+    icon: angular,
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    name:"python",
+    icon: python,
   },
 ];
 
@@ -261,26 +207,30 @@ const projects = [
     source_code_link: "https://github.com/MedAzizOuerfelli/PFA",
   },
   {
-    name: "Task Management App",
+    name: "Real-Time Object Detection",
     description:
-      "A task management application with features like task creation, assignment, progress tracking, and deadline management.",
+      "A computer vision project that implements real-time object detection using machine learning and deep learning techniques. The system can identify and track multiple objects in video streams with high accuracy.",
     tags: [
       {
-        name: "react",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "firebase",
+        name: "OpenCV",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Deep Learning",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Machine Learning",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/MedAzizOuerfelli/Task-Management-App",
+    source_code_link: "https://github.com/MedAzizOuerfelli/Real-Time-Object-Detection",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, testimonials, projects };

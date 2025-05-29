@@ -30,7 +30,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt={name}
-            className='w-full h-full object-cover rounded-2xl'
+            className='w-full h-full object-contain rounded-2xl'
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -83,7 +83,7 @@ const Works = () => {
           >
             Following projects showcases my skills and experience through
             real-world examples of my work. Each project is briefly described with
-            links to code repositories and live demos in it. It reflects my
+            links to code repositories . It reflects my
             ability to solve complex problems, work with different technologies,
             and manage projects effectively.
           </motion.p>

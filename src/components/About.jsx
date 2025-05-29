@@ -47,11 +47,13 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+        I'm a motivated Computer Science engineering student with a strong passion for software development,
+         competitive programming, data science, and cybersecurity. Throughout the year, 
+         I participated in numerous competitive programming contests, 
+         consistently sharpening my algorithmic thinking and coding efficiency. 
+         I also competed in several Capture The Flag challenges, earning 1st, 4th, and 6th places in different events. 
+         In addition, I took part in a national Data Science competition where I secured 4th place.
+          I’m always eager to learn, collaborate, and take on new challenges in the tech world
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

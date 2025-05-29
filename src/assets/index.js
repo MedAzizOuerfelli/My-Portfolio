@@ -21,6 +21,13 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+// Import programming language images
+import cpp from "./tech/cpp.png";
+import c from "./tech/c.png";
+import python from "./tech/python.png";
+import angular from "./tech/angular.png";
+import mysql from "./tech/mysql.png";
+
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
@@ -52,6 +59,11 @@ export {
   tailwind,
   typescript,
   threejs,
+  cpp,
+  c,
+  python,
+  angular,
+  mysql,
   meta,
   shopify,
   starbucks,
