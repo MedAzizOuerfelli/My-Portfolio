@@ -6,31 +6,30 @@ import SocialLinks from "./SocialLinks";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full min-h-[200vh] sm:h-screen mx-auto`}>
-      <div className={`${styles.paddingX} max-w-7xl mx-auto`}>
-        {/* Text Section */}
-        <div className="mt-[120px] flex flex-col items-start">
-          <div className='flex flex-col justify-center items-center mt-5'>
-            <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-            <div className='w-1 sm:h-80 h-40 violet-gradient' />
-          </div>
+    <section className={`relative w-full h-screen mx-auto mb-20`}>
+      <div
+        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col md:flex-row items-start gap-5`}
+      >
+        <div className='flex flex-col justify-center items-center mt-5'>
+          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
+          <div className='w-1 sm:h-80 h-40 violet-gradient' />
+        </div>
 
-          <div className="mt-10">
-            <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I'm <span className='text-[#915EFF]'>Mohamed Aziz Ouerfelli</span>
-            </h1>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              Computer Science Student Engineer <br className='sm:block hidden' />
-            </p>
-            <div className="mt-4 relative z-20">
-              <SocialLinks />
-            </div>
+        <div className="flex-1">
+          <h1 className={`${styles.heroHeadText} text-white`}>
+            Hi, I'm <span className='text-[#915EFF]'>Mohamed Aziz Ouerfelli</span>
+          </h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            Computer Science Student Engineer <br className='sm:block hidden' />
+          </p>
+          <div className="mt-4 relative z-20">
+            <SocialLinks />
           </div>
         </div>
 
         {/* Profile Photo */}
         <motion.div 
-          className="flex flex-col items-center mt-[50px] md:mt-0"
+          className="flex flex-col items-center mt-8 md:mt-0"
           animate={{
             y: [0, -10, 0],
           }}
@@ -41,22 +40,21 @@ const Hero = () => {
             ease: "easeInOut"
           }}
         >
-          <div className="w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[#915EFF]">
+          <div className="w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[#915EFF] relative">
             <img
               src="/photo.jpg"
               alt="Mohamed Aziz Ouerfelli"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-center"
             />
           </div>
         </motion.div>
-
-        {/* 3D PC */}
-        <div className="mt-[150px] md:mt-0">
-          <ComputersCanvas />
-        </div>
       </div>
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      <div className="hidden sm:block absolute inset-0">
+        <ComputersCanvas />
+      </div>
+
+      <div className='hidden sm:flex absolute xs:bottom-10 bottom-32 w-full justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
