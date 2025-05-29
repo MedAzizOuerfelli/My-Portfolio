@@ -42,9 +42,10 @@ const Hero = () => {
         >
           <div className="w-48 h-48 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[#915EFF] relative">
             <img
-              src="/photo.jpg"
+              src="./photo.jpg"
               alt="Mohamed Aziz Ouerfelli"
               className="w-full h-full object-cover object-center"
+              loading="eager"
             />
           </div>
         </motion.div>
