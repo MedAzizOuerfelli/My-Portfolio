@@ -233,7 +233,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/MedAzizOuerfelli/3D_portfolio",
+    source_code_link: "https://github.com/MedAzizOuerfelli/My-Portfolio",
   },
   {
     name: "Freelance Platform",
@@ -258,7 +258,7 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/MedAzizOuerfelli",
+    source_code_link: "https://github.com/MedAzizOuerfelli/PFA",
   },
   {
     name: "Task Management App",
@@ -279,7 +279,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/MedAzizOuerfelli",
+    source_code_link: "https://github.com/MedAzizOuerfelli/Task-Management-App",
   },
 ];
 
