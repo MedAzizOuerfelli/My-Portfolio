@@ -34,7 +34,7 @@ const Tech = () => {
             {technologies.map((technology) => (
               <motion.div
                 key={technology.name}
-                className='bg-tertiary p-4 rounded-2xl flex flex-col items-center justify-center gap-2'
+                className='bg-white p-4 rounded-2xl flex flex-col items-center justify-center gap-2 shadow-lg'
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.2 }}
               >
@@ -43,7 +43,7 @@ const Tech = () => {
                   alt={technology.name}
                   className='w-16 h-16 object-contain'
                 />
-                <p className='text-white text-[14px] text-center'>{technology.name}</p>
+                <p className='text-black text-[14px] text-center font-medium'>{technology.name}</p>
               </motion.div>
             ))}
           </div>
