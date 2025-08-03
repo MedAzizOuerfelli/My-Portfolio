@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-import cvFile from '../assets/cv/Med_Aziz_Ouerfelli.pdf'; // Update this with your actual CV filename
+//import cvFile from '../assets/cv/Med_Aziz_Ouerfelli.pdf'; // Update this with your actual CV filename
 
 const Navbar = () => {
   const [active, setActive] = useState("");
