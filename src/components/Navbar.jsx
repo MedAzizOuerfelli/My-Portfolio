@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
-//import cvFile from '../assets/cv/Med_Aziz_Ouerfelli.pdf'; // Update this with your actual CV filename
+import cvFile from '../assets/cv/Med_Aziz_Ouerfelli.pdf'; // Update this with your actual CV filename
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -77,7 +77,7 @@ const Navbar = () => {
   };
 
   const handleDownloadCV = () => {
-    /*// Create a link element
+    // Create a link element
     const link = document.createElement('a');
     // Set the href to the imported CV file
     link.href = cvFile;
@@ -88,8 +88,8 @@ const Navbar = () => {
     // Trigger the download
     link.click();
     // Clean up
-    document.body.removeChild(link);*/
-    alert("CV download is currently disabled.");
+    document.body.removeChild(link);
+    //alert("CV download is currently disabled.");
   };
 
   return (
